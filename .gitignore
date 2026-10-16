@@ -1,0 +1,56 @@
+# 本地作战记录（某次具体贡献的进度/草稿），不进 skill 仓库
+_oss-work/
+
+# Dependencies（steps 里的脚本若用到 node）
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Credentials / tokens（gh、feishu 等凭据切勿入库）
+*.token
+*.credential*
+.config
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# Coverage
+coverage/
+*.lcov
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+*~
+
+# Temporary / backup files
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Skill runtime working dirs（日志、解压报文等）
+.runtime/
