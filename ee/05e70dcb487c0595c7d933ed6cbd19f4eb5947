@@ -1,0 +1,19 @@
+steps/05-submit-pr.md
+  s_cc4b215233cfaf::t_5827526a146f10 7,14
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.50-trip",
+  "base_commit_sha": "ee05e70dcb487c0595c7d933ed6cbd19f4eb5947",
+  "prompts": {},
+  "sessions": {
+    "s_cc4b215233cfaf": {
+      "agent_id": {
+        "tool": "kiro-desktop",
+        "id": "sess_3a8083f6-ccc9-459f-9db7-ef2a7e74e1ed",
+        "model": "auto"
+      },
+      "human_author": "zxc210 <2530198724@qq.com>"
+    }
+  }
+}
