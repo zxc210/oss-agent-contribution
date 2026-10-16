@@ -1,6 +1,6 @@
 # 流程图（一眼看懂）
 
-给 AI Agent 开源项目做贡献，就是一条闯关路线：从"想做"走到"能吹"。黄色格子是要**停下来问人**的地方。
+给 AI Agent 开源项目做贡献，就是一条闯关路线：从"想做"走到"沉淀成经验"。黄色格子是要**停下来问人**的地方。
 
 ```mermaid
 flowchart TD
@@ -14,8 +14,8 @@ flowchart TD
     Ask2 -->|卡住| Human[🙋 停下来问人]
     Ask2 -->|顺利| S5[🚀 提 PR]
     Human --> S4
-    S5 --> S6[👀 等 review<br/>顺手攒面试故事]
-    S6 --> Done([🎉 PR 合并 + 面试能吹])
+    S5 --> S6[👀 等 review<br/>顺手做复盘总结]
+    S6 --> Done([🎉 PR 合并 + 经验沉淀])
 
     style Start fill:#e1f5fe
     style Ask1 fill:#ffe0b2

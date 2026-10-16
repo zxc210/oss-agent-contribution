@@ -15,7 +15,7 @@ oss-agent-contribution/
 │   ├── 03-tech-design.md              # ③ 技术方案设计 + 维护者沟通草稿
 │   ├── 04-implement.md                # ③ 代码实现 + 测试 + commit 计划
 │   ├── 05-submit-pr.md                # ③ 提交 PR（gh CLI）
-│   └── 06-followup-and-interview.md   # ④ PR 跟进 + 面试叙事框架
+│   └── 06-followup-and-retrospective.md # ④ PR 跟进 + 经验总结沉淀
 └── _oss-work/                         # 本地作战记录（被 .gitignore 忽略，不入库）
     └── <repo>/                        # 按目标仓库分目录：progress.md + 草稿
 ```

@@ -6,7 +6,7 @@
 
 按目标仓库分子目录归档：`_oss-work/<repo>/progress.md`（如 `_oss-work/agents-flex/progress.md`），同一仓库的 issue 正文备份等草稿也放这个子目录下。这样一个 skill 可以服务多个贡献项目，各自独立不混。整个 `_oss-work/` 在 skill 项目的 `.gitignore` 里被忽略——作战记录只在本地留痕，不进 skill 仓库，也不混入 skill 的通用方法论。
 
-clone 下来的目标仓库另放在 skill 项目**外**的同级目录（如 `../<repo>`），彻底独立、不受 skill 的 git 影响。一个贡献流程一份档，持续更新同一个文件，不要每次新建。
+clone 下来的目标仓库另放在 skill 项目**外**的同级目录（如 `../<repo>`），彻底独立、不受 skill 的 git 影响。例如 skill 项目在 `.../study/oss-agent-contribution`，则 clone 到 `.../study/<repo>`。一个贡献流程一份档，持续更新同一个文件，不要每次新建。
 
 ## 什么时候存
 
