@@ -4,13 +4,14 @@
 
 ## 提交前的 git 操作（GitHub 场景，用 gh CLI）
 
+0. **先定提交身份**（任何 commit 之前）：读本 skill 的 `_oss-work/identity.md`，按其中的 `user.name` / `user.email` 给目标仓库设**局部** git 身份（`git config --local`，不碰全局）。文件缺失时，默认沿用 git 全局身份。确保 PR 的 commit 用对账号、能算进贡献图。
 1. Fork 目标仓库（若无写权限）：`gh repo fork {REPO_URL} --clone`。
 2. **新建分支**，不要直接在 main/master 上改：`git checkout -b feat/<简短描述>`。
 3. 按 §4 的 commit 计划分 2~4 个逻辑 commit 提交。
 4. 推到你的 fork：`git push -u origin feat/<简短描述>`。
 5. 创建 PR：`gh pr create --title "..." --body "..."`（标题 ≤ 70 字符，细节放描述）。
 
-> 红线：永远提到新分支；commit 信息遵循项目既有风格（多数用 Conventional Commits）。
+> 红线：先设对提交身份（第 0 步）再 commit；永远提到新分支；commit 信息遵循项目既有风格（多数用 Conventional Commits）。
 
 ## 提 PR 提示词
 
