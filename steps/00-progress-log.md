@@ -4,9 +4,13 @@
 
 ## 存档位置
 
-按目标仓库分子目录归档：`_oss-work/<repo>/progress.md`（如 `_oss-work/agents-flex/progress.md`），同一仓库的 issue 正文备份等草稿也放这个子目录下。这样一个 skill 可以服务多个贡献项目，各自独立不混。整个 `_oss-work/` 在 skill 项目的 `.gitignore` 里被忽略——作战记录只在本地留痕，不进 skill 仓库，也不混入 skill 的通用方法论。
+按「仓库 / 任务」两级归档：`_oss-work/<repo>/<task-slug>/progress.md`（如 `_oss-work/agents-flex/issue-78-structured-output/progress.md`）。`<repo>` 是目标仓库名，`<task-slug>` 是这次贡献切入点的自解释短名——以 `issue-<号>-<主题>` 或 `pr-<主题>` 命名（如 `issue-78-structured-output`、`pr-retry-backoff`），还没有 issue 号时先用 `<主题>`，拿到号后再补。同一任务的 issue 正文备份等草稿都放进对应的 `<task-slug>/` 里。这样同一个仓库下的多个 issue/PR 各自独立成档、互不干扰，一个 skill 也能服务多个仓库。整个 `_oss-work/` 在 skill 项目的 `.gitignore` 里被忽略——作战记录只在本地留痕，不进 skill 仓库，也不混入 skill 的通用方法论。
 
-clone 下来的目标仓库另放在 skill 项目**外**的同级目录（如 `../<repo>`），彻底独立、不受 skill 的 git 影响。例如 skill 项目在 `.../study/oss-agent-contribution`，则 clone 到 `.../study/<repo>`。一个贡献流程一份档，持续更新同一个文件，不要每次新建。
+clone 下来的目标仓库另放在 skill 项目**外**的同级目录（如 `../<repo>`），彻底独立、不受 skill 的 git 影响。例如 skill 项目在 `.../study/oss-agent-contribution`，则 clone 到 `.../study/<repo>`。同一仓库只 clone 一份，其下的多个任务共用这份代码；每个任务一份 progress.md，持续更新同一个文件，不要每次新建。
+
+## 及时清理临时文件
+
+任务目录里**长期保留的只有 .md 产物**：progress.md、issue/PR 正文备份、§3 方案、§6 复盘。流程中用 `gh` / 命令查出来顺手存盘的 json/txt 快照（issue/PR 列表、comments、reviews、checks、diff 片段等）都是**临时文件**——它们的关键结论应及时并进 progress.md，原始快照并完就删，不要留在目录里。判断标准：**信息已进 progress.md 的快照即可删**。整个 `_oss-work/` 本就被 `.gitignore` 忽略、不入库，临时快照留着只会让目录越堆越乱、恢复会话时干扰找文件。到达"等待"节点（发完 issue / 提完 PR）或任务收尾时，顺手清一遍。
 
 ## 什么时候存
 
@@ -63,6 +67,6 @@ clone 下来的目标仓库另放在 skill 项目**外**的同级目录（如 `.
 ## 恢复流程
 
 新会话接手时：
-1. 先读 `_oss-work/<repo>/progress.md` 对齐进度（`_oss-work/` 下有多个仓库子目录时，先确认是哪个）。
+1. 先读 `_oss-work/<repo>/<task-slug>/progress.md` 对齐进度（`_oss-work/` 下有多个仓库、同一仓库下有多个任务子目录时，先确认是哪个仓库的哪个任务）。
 2. 按"已沟通的 issue / PR"里的链接，用 `gh issue view <n> --comments` / `gh pr view <n> --comments` 查有没有新回应。
 3. 从"下一步"清单的第一条继续；代码事实直接采信存档，不重复读源码。

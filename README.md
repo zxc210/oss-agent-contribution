@@ -17,11 +17,12 @@ oss-agent-contribution/
 │   ├── 05-submit-pr.md                # ③ 提交 PR（gh CLI）
 │   └── 06-followup-and-retrospective.md # ④ PR 跟进 + 经验总结沉淀
 └── _oss-work/                         # 本地作战记录（被 .gitignore 忽略，不入库）
-    └── <repo>/                        # 按目标仓库分目录：progress.md + 草稿
+    └── <repo>/                        # 按目标仓库分目录
+        └── <task-slug>/               # 同一仓库下每个 issue/PR 一个任务目录：progress.md + 草稿
 ```
 
 ## 怎么用
 
 从 `SKILL.md` 入手，按用户当前进度路由到对应 step。每步带结构化提示词，把 `{REPO_URL}` / `{LOCAL_PATH}` / 技术栈等占位符替换后使用，并把上一步产物作为下一步的上下文注入。
 
-整个流程跨度长（等维护者回 issue、等 PR review），§0 约定在关键节点把进度写进 `_oss-work/<repo>/progress.md`，换个会话靠它断点续跑。该目录已被 `.gitignore` 忽略，不进 skill 仓库。
+整个流程跨度长（等维护者回 issue、等 PR review），§0 约定在关键节点把进度写进 `_oss-work/<repo>/<task-slug>/progress.md`，换个会话靠它断点续跑。同一仓库下多个 issue/PR 按 `<task-slug>` 各自成档、互不干扰。该目录已被 `.gitignore` 忽略，不进 skill 仓库。
