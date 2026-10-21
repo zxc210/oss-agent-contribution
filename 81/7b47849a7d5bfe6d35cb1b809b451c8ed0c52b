@@ -1,0 +1,12 @@
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.51-trip",
+  "base_commit_sha": "817b47849a7d5bfe6d35cb1b809b451c8ed0c52b",
+  "prompts": {},
+  "humans": {
+    "h_f6bc7c2a81a92a": {
+      "author": "zxc210 <2530198724@qq.com>"
+    }
+  }
+}
