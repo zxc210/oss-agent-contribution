@@ -1,10 +1,12 @@
 # §1 找合适的开源项目
 
-目标：从 GitHub 上筛出一批**跟 Agent 强相关、热度够、仍活跃**的候选项目，供 §2 深入分析。
+目标：从 GitHub 上筛出一批**跟用户主题强相关、热度够、仍活跃**的候选项目，供 §2 深入分析。
+
+> 开始前先确定主题：读 `_oss-work/preferences.md` 里的"主题 / 领域"和"技术栈"；文件缺失或没填就问用户"想贡献什么主题 / 领域的项目、用什么技术栈"。主题不限（AI Agent / LLM、数据库、前端组件库、CLI 工具、Web 框架等均可），下文凡出现 `{主题}` 处都代入它。
 
 ## 一个合格项目的三条硬要求
 
-1. **跟 Agent 强相关**（AI Agent / LLM 框架、工具链、应用）。
+1. **跟 `{主题}` 强相关**（用户声明的领域，如 AI Agent / LLM 框架、数据库、前端组件库、CLI 工具等）。
 2. **Star 数量够多**（有社区、有维护投入）。
 3. **仍然活跃**，用下面的健康度信号判断。
 
@@ -21,17 +23,17 @@
 
 ## GitHub Search 高级语法
 
-用 GitHub 的高级搜索按主题 + 热度 + 活跃度一次性收窄。示例：
+用 GitHub 的高级搜索按主题 + 热度 + 活跃度一次性收窄。把 `topic:` 换成你主题对应的标签即可。示例（主题为 AI Agent 时）：
 
 ```
-topic:ai-agent stars:>1000 pushed:>2026-04-01
+topic:ai-agent stars:>1000 pushed:>YYYY-MM-DD
 ```
 
-- `topic:ai-agent`：按主题标签过滤（可换 `llm`、`autonomous-agents`、`langchain` 等相关 topic）。
+- `topic:ai-agent`：按主题标签过滤。**换成 `{主题}` 对应的 topic**——如数据库 `topic:database`、前端组件库 `topic:react-components`、CLI 工具 `topic:cli`，一个主题常有多个相关 topic，可分别试。
 - `stars:>1000`：热度下限，按需调整。
-- `pushed:>YYYY-MM-DD`：最近有推送，直接过滤掉停更项目（把日期设成"近 1 个月"对齐 last commit 要求）。
+- `pushed:>YYYY-MM-DD`：最近有推送，直接过滤掉停更项目（把日期设成"近 1 个月"对齐 last commit 要求，用当前日期往前推算，别照抄固定日期）。
 
-> 执行提示：可在 GitHub 网页搜索栏直接输入上述语法；若要自动化，用 `gh search repos "topic:ai-agent stars:>1000 pushed:>2026-04-01" --limit 20` 拉取候选列表。
+> 执行提示：可在 GitHub 网页搜索栏直接输入上述语法；若要自动化，用 `gh search repos "topic:<你的主题> stars:>1000 pushed:>YYYY-MM-DD" --limit 20` 拉取候选列表。
 
 ## 出口
 

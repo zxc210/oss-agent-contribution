@@ -1,6 +1,6 @@
 # oss-agent-contribution
 
-为 AI Agent 开源项目做贡献的全流程 skill（面向 GitHub，产出 PR）。整理自作者 Lucian 的方法论文章《手把手教你为 AI Agent 开源项目做贡献》。
+为开源项目做贡献的全流程 skill（面向 GitHub，产出 PR），主题 / 领域不限（AI Agent、数据库、前端组件库、CLI 工具等均可，由用户声明）。整理自作者 Lucian 的方法论文章《手把手教你为 AI Agent 开源项目做贡献》，并把流程泛化到任意主题。
 
 ## 结构
 
@@ -11,12 +11,14 @@ oss-agent-contribution/
 ├── steps/
 │   ├── 00-progress-log.md             # §0 贯穿全程：进度存档与恢复（断点续跑）
 │   ├── 01-find-project.md             # ① 找项目：GitHub 高级搜索 + 健康度筛选
-│   ├── 02-find-entry-point.md         # ② 找切入点：Label 过滤 + 7 维度架构缺陷分析 + Top3
+│   ├── 02-find-entry-point.md         # ② 找切入点：Label 过滤 + 架构缺陷分析 + Top3
 │   ├── 03-tech-design.md              # ③ 技术方案设计 + 维护者沟通草稿
 │   ├── 04-implement.md                # ③ 代码实现 + 测试 + commit 计划
 │   ├── 05-submit-pr.md                # ③ 提交 PR（gh CLI）
 │   └── 06-followup-and-retrospective.md # ④ PR 跟进 + 经验总结沉淀
 └── _oss-work/                         # 本地作战记录（被 .gitignore 忽略，不入库）
+    ├── preferences.md                 # 贡献偏好：主题/领域 + 技术栈（§1 读它定主题，不写死）
+    ├── identity.md                    # 提 PR 用的 git 身份（本地私有）
     └── <repo>/                        # 按目标仓库分目录
         └── <task-slug>/               # 同一仓库下每个 issue/PR 一个任务目录：progress.md + 草稿
 ```
