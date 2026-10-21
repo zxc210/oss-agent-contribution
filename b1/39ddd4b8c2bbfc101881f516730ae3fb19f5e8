@@ -1,0 +1,51 @@
+FLOW.md
+  s_281fb734c86922::t_c31e30b7c961eb 3
+steps/01-find-project.md
+  s_281fb734c86922::t_11527d29d83ad2 26,29,32,34,36
+  s_281fb734c86922::t_d6f47c265f4c95 3-5,9
+steps/03-tech-design.md
+  s_281fb734c86922::t_589fd134d2ba55 31
+  s_281fb734c86922::t_89360695830671 78
+  s_281fb734c86922::t_c0e612b146c2bf 14-16
+steps/04-implement.md
+  s_281fb734c86922::t_4057276c27bfbb 81
+SKILL.md
+  s_281fb734c86922::t_11252c0b800b09 3,6,8,10,15,18-24
+  s_281fb734c86922::t_2471cb44f0668d 55
+README.md
+  s_281fb734c86922::t_7ef38dfcd142ff 3
+  s_281fb734c86922::t_bc92612b4924e3 14
+  s_281fb734c86922::t_a99191a91bc315 20-21
+steps/06-followup-and-retrospective.md
+  s_281fb734c86922::t_ef5eb9da3ddd12 8
+  s_281fb734c86922::t_7fc890013fa844 15
+steps/02-find-entry-point.md
+  s_281fb734c86922::t_246c6778631d17 58
+  s_281fb734c86922::t_07c14ea6f3a88a 70-71,73,75,77-80,82,84-87,89,91-93,95,97-100,102,104-106,108,110-112,114,116-126
+  s_281fb734c86922::t_9b233815dbeacb 153
+  s_281fb734c86922::t_964f4122d82921 16
+  s_281fb734c86922::t_d15606414df5b2 143
+  s_281fb734c86922::t_bbe0a11111b29c 29,36-37,50
+  s_281fb734c86922::t_e112956fb6086a 24
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.51-trip",
+  "base_commit_sha": "b139ddd4b8c2bbfc101881f516730ae3fb19f5e8",
+  "prompts": {},
+  "humans": {
+    "h_f6bc7c2a81a92a": {
+      "author": "zxc210 <2530198724@qq.com>"
+    }
+  },
+  "sessions": {
+    "s_281fb734c86922": {
+      "agent_id": {
+        "tool": "kiro-desktop",
+        "id": "sess_9e335e5b-4bb8-4ccc-9219-3629dee3c781",
+        "model": "auto"
+      },
+      "human_author": "zxc210 <2530198724@qq.com>"
+    }
+  }
+}
